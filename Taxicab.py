@@ -40,6 +40,6 @@ cab1 = Taxicab(5, -8)  # creates a new taxi cab with specific traveling paramete
 cab1.move_x(3)  # sets the number of units the taxi cab moves right.
 cab1.move_y(-4)  # sets the number of units the taxi cab moves down.
 cab1.move_x(-1)  # sets the number of units the taxi cab moves left.
-print(cab1.get_odometer())  # prints the odometer reading.
-print(cab1.get_x())  # prints the correct amount of units traveled left and right.
-print(cab1.get_y())  # prints the correct number of units traveled down.
+# print(cab1.get_odometer())  # prints the odometer reading.
+# print(cab1.get_x())  # prints the correct amount of units traveled left and right.
+# print(cab1.get_y())  # prints the correct number of units traveled down.
