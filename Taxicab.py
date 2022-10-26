@@ -9,7 +9,6 @@ class Taxicab:
     """Represents a taxi cab's traveling distance."""
 
     def __init__(self, x, y):
-        """Creates a new taxi cab with specific traveling parameters."""
         self.x_coord = x
         self.y_coord = y
         self.odometer = 0
