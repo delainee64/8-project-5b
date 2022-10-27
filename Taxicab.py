@@ -25,21 +25,21 @@ class Taxicab:
         """Returns the odometer reading of the cab."""
         return self.odometer
 
-    def move_x_coord(self, distance):
+    def move_x(self, distance):
         """Calculates the absolute distance of how far the taxi cab travels left or right."""
         self.x_coord += distance
         self.odometer += abs(distance)
 
-    def move_y_coord(self, distance):
+    def move_y(self, distance):
         """Calculates the absolute distance of how far the taxi cad travels up or down."""
         self.y_coord += distance
         self.odometer += abs(distance)
 
 
 cab1 = Taxicab(5, -8)  # creates a new taxi cab with specific traveling parameters.
-cab1.move_x_coord(3)  # sets the number of units the taxi cab moves right.
-cab1.move_y_coord(-4)  # sets the number of units the taxi cab moves down.
-cab1.move_x_coord(-1)  # sets the number of units the taxi cab moves left.
-# print(cab1.get_odometer())  # prints the odometer reading.
-# print(cab1.get_x_coord())  # prints the correct amount of units traveled left and right.
-# print(cab1.get_y_coord())  # prints the correct number of units traveled down.
+cab1.move_x(3)  # sets the number of units the taxi cab moves right.
+cab1.move_y(-4)  # sets the number of units the taxi cab moves down.
+cab1.move_x(-1)  # sets the number of units the taxi cab moves left.
+print(cab1.get_odometer())  # prints the odometer reading.
+print(cab1.get_x_coord())  # prints the correct amount of units traveled left and right.
+print(cab1.get_y_coord())  # prints the correct number of units traveled down.
